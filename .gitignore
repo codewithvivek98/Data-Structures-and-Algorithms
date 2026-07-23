@@ -1,0 +1,13 @@
+# Executables
+*.exe
+
+# VS Code Local History
+.history/
+
+# Object files
+*.o
+*.obj
+
+# Build folders
+build/
+bin/
