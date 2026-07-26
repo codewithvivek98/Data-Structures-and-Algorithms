@@ -1,0 +1,29 @@
+#include <iostream>
+using namesoacestd;
+
+function syntex
+returnType functionName(parameters) {
+    //do some work
+}
+
+
+int main() {
+
+    cout << functionName() << endl; use cout when returnType is degined like int,char etc --> have return statement in function
+    functionName(); use this when void is used in place of returnType -- no return statement
+
+    return 0;
+
+
+}
+
+
+/// Notes
+//function in memory 
+their is 2 type of memory
+1.Stack(static allocation) --> every functionis stored in this in the form of stack frame 
+2.Reep(dynamic allocation)
+
+
+// PASS BY VALUSE 
+copy of argument is passed to function; means if (a, b is deleared in function) so (a,b can also be used in int main())
