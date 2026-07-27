@@ -1,0 +1,24 @@
+//common binary numbers to remember:
+Decimal -->  binary
+0            00
+1            01
+2            10
+3            11
+4            100
+5            101
+6            110
+7            111
+8            1000
+9            1001
+10           1010
+
+
+// Odd decimal numbers when converted to binaray , they have 1 at last
+// Even decimal numbers when converted to binaray , they have 0 at last
+
+
+// read the image of Two's components
+MSB(most significiant bit) 
+if at prefix : 0 --> positive numbers
+if at prefix : 1 --> negative numbers
+//read image of 2's_component(binaryToDecimal)
