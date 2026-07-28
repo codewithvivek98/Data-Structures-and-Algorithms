@@ -1,0 +1,33 @@
+// Bitwise operator 
+to perform operation add both decimal binary digits to get the output as decimal values
+1. AND (&) operator (Both must be true to get 1)
+0 & 0 --> 0
+0 & 1 --> 0
+1 & 0 --> 0
+1 & 1 --> 1
+
+2. logical OR (|) operator (if anyone one is 1 then output is 1)
+0 & 0 --> 0
+0 & 1 --> 1
+1 & 0 --> 1
+1 & 1 --> 1
+
+3.  XOR (^) operator / exclusive OR (same --> 0, different --> 1)
+0 & 0 --> 0
+0 & 1 --> 1
+1 & 0 --> 1
+1 & 1 --> 0
+
+4. left shift operator (<<)
+(a << b) --> formula: a * 2^b 
+
+5. left shift operator (>>)
+(a >> b) --> formula: a / 2^b
+
+// then read operation precedence image notes
+
+// Data type modifier --> change the meaning of existing data type
+long, short, long long, signed, unsigned
+
+int is a signed data type , means it can store +ve and -ve both (-2^31 to +2^31-1)
+and unsigned only stores =ve values (0 to 2^31-1)
