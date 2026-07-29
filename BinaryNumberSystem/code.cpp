@@ -57,8 +57,9 @@ int main() {
     // decimalToBinary(25);
     // cout << endl;
 
-    cout << binaryToDecimal(100100);
+    // cout << binaryToDecimal(100000);
      // cout << endl;
+     
 
 
 

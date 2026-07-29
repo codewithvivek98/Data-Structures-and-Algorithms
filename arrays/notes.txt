@@ -1,0 +1,13 @@
+/// Arrays:
+stores large number of data.
+stores same type of data 
+they are contignous in memory + linear.
+
+creation of arrays:
+dataType arrayName[n]
+n --> is the size of an ayyar
+
+dataType arrayName[] = {size of an array}
+
+//for writing +infinity 
+INT_MAX
