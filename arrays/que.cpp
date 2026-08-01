@@ -19,7 +19,7 @@ int main() {
     // Same output using min() and max() function:
     for(int i=0; i<size; i++) {
         smallestNum = min(arr[i], smallestNum); // Give minimum value from array
-        largestNum = max(arr[i],largestNum); // Give maximum value from array
+        largestNum = max(arr[i],largestNum);   // Give maximum value from array
     }
     cout << "Smallest number using min() function: " << smallestNum << endl;
     cout << "Largets number using max() function: " << largestNum << endl;

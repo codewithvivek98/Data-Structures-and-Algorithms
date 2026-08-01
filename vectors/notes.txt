@@ -1,0 +1,235 @@
+////A vector is a dynamic array provided by the C++ Standard Library. It stores elements like an array but can automatically grow or shrink in size.
+
+ARRAY vs VECTOR
+| Feature       | Array             | Vector                        |
+| ------------- | ----------------- | ----------------------------- |
+| Size          | Fixed             | Dynamic (can grow/shrink)     |
+| Memory        | Fixed             | Resizes automatically         |
+| Insert/Delete | Difficult         | Easy using built-in functions |
+| Part of       | Core C++ language | STL (`<vector>`)              |
+| Size Function | `sizeof()`        | `v.size()`                    |
+
+///creation of vectors: Theri are 3 way to create vector, as mention below
+#include <vector>  // header to use vectors
+
+1. vector<dataType> vec;
+2. vector<dataType> vec = {10, 20, 30, 40, 50};
+3. vector<dataType> vec(size of vector, index value)
+
+You can keep adding elements.
+vec.push_back(60);
+vec.push_back(70);
+Now the vector becomes:
+10 20 30 40 50 60 70
+
+for running code use 
+g++ -std=c11 fileName.cpp && .\a.exe ; (if getting error in)  g++ fileName.cpp && .\a.exe
+
+
+=========================
+      VECTOR FUNCTIONS
+=========================
+
+1. size()
+------------
+• Returns the number of elements in the vector.
+Syntax:
+v.size();
+
+Example:
+vector<int> v = {10, 20, 30};
+cout << v.size();    // 3
+
+
+2. push_back()
+----------------
+• Adds an element at the end of the vector.
+Syntax:
+v.push_back(value);
+
+Example:
+v.push_back(40);
+
+
+3. pop_back()
+---------------
+• Removes the last element from the vector.
+Syntax:
+v.pop_back();
+
+Example:
+v.pop_back();
+
+
+4. front()
+------------
+• Returns the first element of the vector.
+Syntax:
+v.front();
+
+Example:
+cout << v.front();
+
+
+5. back()
+-----------
+• Returns the last element of the vector.
+Syntax:
+v.back();
+
+Example:
+cout << v.back();
+
+
+6. at()
+---------
+• Accesses an element at a specific index.
+• Performs bounds checking.
+Syntax:
+v.at(index);
+
+Example:
+cout << v.at(2); // ptint the valuse at index 2
+
+
+7. empty()
+------------
+• Checks whether the vector is empty.
+• Returns true if empty, otherwise false.
+Syntax:
+v.empty();
+
+Example:
+if(v.empty())
+    cout << "Empty";
+
+
+8. clear()
+------------
+• Removes all elements from the vector.
+• Size becomes 0.
+Syntax:
+v.clear();
+
+
+9. capacity()
+---------------
+• Returns the total storage allocated to the vector.
+• Capacity is always greater than or equal to size.
+Syntax:
+v.capacity();
+
+
+10. resize()
+--------------
+• Changes the size of the vector.
+• If size increases, new elements are initialized to 0 (or a specified value).
+Syntax:
+v.resize(n);
+v.resize(n, value);
+
+Example:
+v.resize(5);
+v.resize(5, 100);
+
+
+11. insert()
+--------------
+• Inserts an element at a specified position.
+Syntax:
+v.insert(v.begin() + index, value);
+
+Example:
+v.insert(v.begin() + 2, 50);
+
+
+12. erase()
+-------------
+• Removes an element from a specified position.
+Syntax:
+v.erase(v.begin() + index);
+
+Example:
+v.erase(v.begin() + 1);
+
+
+13. swap()
+------------
+• Swaps the contents of two vectors.
+Syntax:
+v1.swap(v2);
+
+Example:
+vector<int> a = {1,2};
+vector<int> b = {3,4};
+
+a.swap(b);
+
+
+=========================
+    VECTOR DECLARATION
+=========================
+
+1. Empty Vector
+vector<int> v;
+
+2. Fixed Size Vector
+vector<int> v(5);
+
+3. Fixed Size with Initial Value
+vector<int> v(5, 10);
+
+4. Initialize with Values
+vector<int> v = {1,2,3,4,5};
+
+
+===============================
+STATIC vs DYNAMIC ALLOCATION
+===============================
+
+1. Static Allocation
+---------------------
+• Memory is allocated at compile time.
+• Size is fixed and cannot be changed.
+• Memory is stored in the Stack.
+• Faster than dynamic allocation.
+• Used for Arrays.
+
+Example:
+int arr[5];
+
+Advantages:
+• Fast memory allocation.
+• Easy to use.
+• No need to free memory manually.
+
+Disadvantages:
+• Fixed size.
+• Memory may be wasted if the array is larger than needed.
+• Cannot grow or shrink.
+
+
+2. Dynamic Allocation
+----------------------
+• Memory is allocated at runtime.
+• Size can be changed during program execution.
+• Memory is stored in the Heap.
+• Slightly slower than static allocation.
+• Used for Vectors, Dynamic Arrays, Linked Lists, etc.
+
+Example:
+int* arr = new int[5];
+or
+vector<int> v;
+
+Advantages:
+• Flexible size.
+• Better memory utilization.
+• Can grow or shrink as required.
+
+Disadvantages:
+• Slower than static allocation.
+• Memory must be managed carefully (for 'new', use 'delete').
+• Memory leaks can occur if memory is not freed.
+
+
