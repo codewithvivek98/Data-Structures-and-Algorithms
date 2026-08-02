@@ -1,0 +1,223 @@
+=========================================
+      BRUTE FORCE APPROACH
+=========================================
+
+Definition:
+-----------
+Brute Force is the simplest approach to solve a problem.
+It checks every possible solution and selects the correct or
+optimal one.
+
+It is easy to understand but is usually not the most efficient.
+
+-----------------------------------------
+Brute Force for Maximum Subarray Sum
+-----------------------------------------
+
+Idea:
+-----
+Generate all possible subarrays, calculate the sum of each
+subarray, and keep track of the maximum sum.
+
+Algorithm:
+----------
+1. Start from every index.
+2. Generate all possible subarrays.
+3. Calculate the sum of each subarray.
+4. Compare the sum with the maximum sum.
+5. Return the maximum sum.
+
+-----------------------------------------
+Code
+-----------------------------------------
+
+int maxSum = INT_MIN;
+
+for(int start = 0; start < n; start++) {
+
+    int currentSum = 0;
+
+    for(int end = start; end < n; end++) {
+
+        currentSum += arr[end];
+
+        maxSum = max(maxSum, currentSum);
+    }
+}
+
+cout << maxSum;
+
+-----------------------------------------
+Example
+-----------------------------------------
+
+Array:
+{2, -3, 6, -5, 4, 2}
+
+Possible Subarrays:
+
+{2}
+{2,-3}
+{2,-3,6}
+{2,-3,6,-5}
+{2,-3,6,-5,4}
+{2,-3,6,-5,4,2}
+
+{-3}
+{-3,6}
+{-3,6,-5}
+...
+
+Maximum Sum = 7
+
+Maximum Sum Subarray:
+{6,-5,4,2}
+
+-----------------------------------------
+Time Complexity
+-----------------------------------------
+
+Outer Loop  : O(n)
+Inner Loop  : O(n)
+
+Overall Time Complexity = O(n²)
+
+Space Complexity = O(1)
+
+-----------------------------------------
+Advantages
+-----------------------------------------
+
+• Simple to understand.
+• Easy to implement.
+• Good for small input sizes.
+
+-----------------------------------------
+Disadvantages
+-----------------------------------------
+
+• Slow for large inputs.
+• Checks many unnecessary subarrays.
+• Not suitable for large datasets.
+
+
+
+Kadane's Algorithm is an optimized version of the brute-force approach for finding the Maximum Subarray Sum.
+
+=========================================
+      BRUTE FORCE APPROACH
+=========================================
+
+Definition:
+-----------
+Brute Force is the simplest approach to solve a problem.
+It checks every possible solution and selects the correct or
+optimal one.
+
+It is easy to understand but is usually not the most efficient.
+
+-----------------------------------------
+Brute Force for Maximum Subarray Sum
+-----------------------------------------
+
+Idea:
+-----
+Generate all possible subarrays, calculate the sum of each
+subarray, and keep track of the maximum sum.
+
+Algorithm:
+----------
+1. Start from every index.
+2. Generate all possible subarrays.
+3. Calculate the sum of each subarray.
+4. Compare the sum with the maximum sum.
+5. Return the maximum sum.
+
+-----------------------------------------
+Code
+-----------------------------------------
+
+int maxSum = INT_MIN;
+
+for(int start = 0; start < n; start++) {
+
+    int currentSum = 0;
+
+    for(int end = start; end < n; end++) {
+
+        currentSum += arr[end];
+
+        maxSum = max(maxSum, currentSum);
+    }
+}
+
+cout << maxSum;
+
+-----------------------------------------
+Example
+-----------------------------------------
+
+Array:
+{2, -3, 6, -5, 4, 2}
+
+Possible Subarrays:
+
+{2}
+{2,-3}
+{2,-3,6}
+{2,-3,6,-5}
+{2,-3,6,-5,4}
+{2,-3,6,-5,4,2}
+
+{-3}
+{-3,6}
+{-3,6,-5}
+...
+
+Maximum Sum = 7
+
+Maximum Sum Subarray:
+{6,-5,4,2}
+
+-----------------------------------------
+Time Complexity
+-----------------------------------------
+
+Outer Loop  : O(n)
+Inner Loop  : O(n)
+
+Overall Time Complexity = O(n²)
+
+Space Complexity = O(1)
+
+-----------------------------------------
+Advantages
+-----------------------------------------
+
+• Simple to understand.
+• Easy to implement.
+• Good for small input sizes.
+
+-----------------------------------------
+Disadvantages
+-----------------------------------------
+
+• Slow for large inputs.
+• Checks many unnecessary subarrays.
+• Not suitable for large datasets.
+
+-----------------------------------------
+Comparison
+-----------------------------------------
+
+Brute Force
+-----------
+Time  : O(n²)
+Space : O(1)
+
+Kadane's Algorithm
+------------------
+Time  : O(n)
+Space : O(1)
+
+Kadane's Algorithm is an optimized version of the brute-force approach for finding the Maximum Subarray Sum.
