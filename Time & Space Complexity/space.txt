@@ -1,0 +1,91 @@
+====================================
+        SPACE COMPLEXITY
+====================================
+
+Definition:
+-----------
+Space Complexity measures the total amount of memory used by
+an algorithm as the input size (n) increases.
+
+It includes both the input space and the extra (auxiliary)
+memory used by the algorithm.
+
+------------------------------------
+Important Points
+------------------------------------
+
+• Measured using Big-O Notation.
+• Indicates how much memory an algorithm requires.
+• Lower Space Complexity is generally preferred.
+• Auxiliary Space = Extra memory used by the algorithm
+  (excluding the input).
+
+------------------------------------
+Common Space Complexities
+------------------------------------
+
+O(1)      → Constant Space
+           Example: Using a few variables.
+
+O(log n)  → Logarithmic Space
+           Example: Recursive Binary Search (call stack).
+
+O(n)      → Linear Space
+           Example: Creating an extra array of size n.
+
+O(n²)     → Quadratic Space
+           Example: 2D array of size n × n.
+
+------------------------------------
+Examples
+------------------------------------
+
+1. Using only variables
+
+int sum = 0;
+int max = 0;
+
+Space Complexity = O(1)
+
+------------------------------------
+
+2. Extra Array
+
+int arr2[n];
+
+Space Complexity = O(n)
+
+------------------------------------
+
+3. 2D Matrix
+
+int matrix[n][n];
+
+Space Complexity = O(n²)
+
+------------------------------------
+
+4. Recursion
+
+Each recursive call uses stack memory.
+
+Recursive Fibonacci
+Space Complexity = O(n)
+
+------------------------------------
+Time vs Space Complexity
+------------------------------------
+
+Time Complexity  → Measures execution time.
+
+Space Complexity → Measures memory usage.
+
+------------------------------------
+Remember
+------------------------------------
+
+• Fewer variables → Lower Space Complexity.
+• Extra arrays or matrices increase Space Complexity.
+• Recursive functions use additional stack memory.
+
+====================================

@@ -1,0 +1,69 @@
+====================================
+     PRACTICAL TIME COMPLEXITY
+====================================
+
+These limits help you choose an algorithm that runs within
+the typical competitive programming time limit (≈1 second).
+
+--------------------------------------------------
+
+Input Size (n)        Preferred Complexity
+
+n > 10^8              O(1), O(log n)
+
+n ≤ 10^8              O(n)
+
+n ≤ 10^6              O(n log n)
+
+n ≤ 10^4              O(n²)
+
+n ≤ 500               O(n³)
+
+n ≤ 25                O(2ⁿ)
+
+n ≤ 12                O(n!)
+
+--------------------------------------------------
+Examples
+--------------------------------------------------
+
+O(1)      → Access array element
+
+O(log n)  → Binary Search
+
+O(n)      → Linear Search, Array Traversal
+
+O(n log n) → Merge Sort, Quick Sort (Average)
+
+O(n²)     → Bubble Sort, Selection Sort
+
+O(n³)     → Floyd-Warshall Algorithm
+
+O(2ⁿ)     → Recursion, Backtracking, Brute Force
+
+O(n!)     → Permutations, N-Queens (Brute Force)
+
+--------------------------------------------------
+Remember
+--------------------------------------------------
+
+• Larger input size → Need a faster algorithm.
+• Smaller input size → Slower algorithms may still pass.
+• Always choose the lowest possible time complexity.
+
+====================================
+
+Quick Trick to Remember
+n > 10^8   → O(1), O(log n)
+
+10^8       → O(n)
+
+10^6       → O(n log n)
+
+10^4       → O(n²)
+
+500        → O(n³)
+
+25         → O(2ⁿ)
+
+12         → O(n!)

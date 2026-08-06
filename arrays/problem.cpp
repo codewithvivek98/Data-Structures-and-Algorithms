@@ -12,7 +12,7 @@ int linearSearch(int arr[], int size, int targetVal) {
 }
 
 // reverse an array elements using 2-POINTER APPROACH / done in code.cpp using reverse() function
-// usesstart and end --> that's why 2 pointer approach and have TC O(n)
+// uses start and end --> that's why 2 pointer approach and have TC O(n)
 int reverseArray(int arr[], int size) {
     int start = 0; //starting index
     int end = size-1; // ending index

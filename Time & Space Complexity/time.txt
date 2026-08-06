@@ -1,0 +1,84 @@
+====================================
+        TIME COMPLEXITY
+====================================
+
+Definition:
+-----------
+Time Complexity measures how the running time of an algorithm
+grows as the input size (n) increases.
+
+It does NOT measure the actual execution time in seconds.
+
+------------------------------------
+Important Points
+------------------------------------
+
+• n = Input size (number of elements).
+• Measured using Big-O Notation.
+• Represents the worst-case performance.
+• Helps compare the efficiency of algorithms.
+• Smaller Time Complexity = Faster algorithm for large inputs.
+
+------------------------------------
+Common Time Complexities
+------------------------------------
+
+O(1)      → Constant Time 
+           Example: Accessing an array element.
+
+O(log n)  → Logarithmic Time 
+           Example: Binary Search.
+
+O(n)      → Linear Time
+           Example: Linear Search, Array Traversal.
+
+O(n log n) → Linearithmic Time
+             Example: Merge Sort, Quick Sort (Average Case).
+
+O(n²)     → Quadratic Time
+           Example: Two Nested Loops, Bubble Sort.
+
+O(2ⁿ)     → Exponential Time
+           Example: Recursive Fibonacci.
+
+O(n!)     → Factorial Time
+           Example: Generating all permutations.
+
+------------------------------------
+Order of Efficiency (Best --> Worst)
+------------------------------------
+
+O(1) (Best)
+   ↓
+O(log n)
+   ↓
+O(n)
+   ↓
+O(n log n)
+   ↓
+O(n²)
+   ↓
+O(2ⁿ)
+   ↓
+O(n!) (Worst)
+
+(Best) ----------------------> (Worst) also (upper boundary)
+
+------------------------------------
+Example
+------------------------------------
+
+Single loop           → O(n)
+
+Nested loops          → O(n²)
+
+Binary Search         → O(log n)
+
+Array indexing        → O(1)
+
+------------------------------------
+Remember
+------------------------------------
+
+As input size (n) increases,
+an algorithm with lower Time Complexity performs better.
